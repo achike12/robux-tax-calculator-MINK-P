@@ -1,0 +1,18 @@
+# Robux Tax Calculator Ultimate 💎
+
+This is a **fully featured Robux Tax Calculator** website, ready to deploy on GitHub Pages. Features:
+
+- Live Robux → USD calculation  
+- Custom DevEx rates  
+- Robux Tier bonuses  
+- Multiple currencies (USD, EUR, GBP)  
+- Dark/Light mode toggle  
+- Copy payout button  
+- Animated chart showing Tax vs Payout  
+- Fully responsive design  
+
+## How to Deploy
+
+1. Clone this repository:
+```bash
+git clone <repo-url>
