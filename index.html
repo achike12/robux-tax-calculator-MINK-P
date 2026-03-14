@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robux Tax Calculator Ultimate 💎</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Robux Tax Calculator Ultimate 💎</h1>
+    <p>Full-featured calculator: Robux → USD, Tier Bonuses, Multiple Currencies, Graphs!</p>
+
+    <div class="input-group">
+      <label for="robux">Enter Robux amount:</label>
+      <input type="number" id="robux" placeholder="e.g., 1000" min="0">
+    </div>
+
+    <div class="input-group">
+      <label for="devex">DevEx Rate (%):</label>
+      <input type="number" id="devex" placeholder="Default: 35" value="35" min="0" max="100">
+    </div>
+
+    <div class="input-group">
+      <label for="tier">Select Robux Tier:</label>
+      <select id="tier">
+        <option value="1">Standard</option>
+        <option value="2">High Sale Bonus (+5%)</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label for="currency">Select Currency:</label>
+      <select id="currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+      </select>
+    </div>
+
+    <button id="calculateBtn">Calculate Payout</button>
+
+    <div id="result" class="result">
+      <p>Tax Deducted: <span id="tax">0</span> Robux</p>
+      <p>Payout: <span id="currencySymbol">$</span><span id="usd">0.00</span></p>
+      <button id="copyBtn">Copy Payout</button>
+    </div>
+
+    <canvas id="graph" width="400" height="200"></canvas>
+
+    <div class="instructions">
+      <h3>How it works:</h3>
+      <ul>
+        <li>Enter Robux amount.</li>
+        <li>Set DevEx rate (Roblox default 35%).</li>
+        <li>Choose tier bonus.</li>
+        <li>Select your currency.</li>
+        <li>Click calculate to see payout and tax graph!</li>
+      </ul>
+    </div>
+
+    <div class="theme-toggle">
+      <label for="darkMode">Dark Mode:</label>
+      <input type="checkbox" id="darkMode">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
